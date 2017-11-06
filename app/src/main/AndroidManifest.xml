@@ -19,13 +19,7 @@
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
-        <activity android:name=".ListActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ListActivity" />
         <activity android:name=".ElementViewActivity" />
         <activity android:name=".ElementEditActivity" />
         <activity android:name=".SplashActivity">
@@ -36,5 +30,5 @@
             </intent-filter>
         </activity>
     </application>
-
+    <uses-permission android:name="android.permission.VIBRATE"/>
 </manifest>

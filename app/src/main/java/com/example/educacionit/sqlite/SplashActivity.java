@@ -1,6 +1,8 @@
 package com.example.educacionit.sqlite;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -19,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
         Thread thread = new Thread() {
             public void run() {
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(1500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
@@ -30,6 +32,7 @@ public class SplashActivity extends AppCompatActivity {
             }
         };
         thread.start();
-
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        v.vibrate(1500);
     }
 }

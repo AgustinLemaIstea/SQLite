@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.educacionit.sqlite.SplashActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/loadingbar"
+        android:scaleType="fitCenter"
+        android:background='#000000' />
+
 </android.support.constraint.ConstraintLayout>
